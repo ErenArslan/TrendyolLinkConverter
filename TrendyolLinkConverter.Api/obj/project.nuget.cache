@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DtAAHYfcefayGs6i4Sd+E9DIuMq20VKf+AgiRacoYHu+LdFpsb2tb3y9DG0SVuBJoeyt4pYl6RftaDfFdvrp/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SingleLanguage\\source\\repos\\TrendyolLinkConverter.Api\\TrendyolLinkConverter.Api\\TrendyolLinkConverter.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}

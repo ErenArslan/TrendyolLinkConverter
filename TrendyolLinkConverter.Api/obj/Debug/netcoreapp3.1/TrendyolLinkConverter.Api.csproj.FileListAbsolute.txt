@@ -1,0 +1,14 @@
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.deps.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.runtimeconfig.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.runtimeconfig.dev.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.csprojAssemblyReference.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.AssemblyInfoInputs.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.AssemblyInfo.cs
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.RazorTargetAssemblyInfo.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\staticwebassets\TrendyolLinkConverter.Api.StaticWebAssets.Manifest.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\staticwebassets\TrendyolLinkConverter.Api.StaticWebAssets.xml
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.deps.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.pdb
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.csprojAssemblyReference.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.AssemblyInfo.cs
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.pdb
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.runtimeconfig.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.runtimeconfig.dev.json
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.genruntimeconfig.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Core.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\bin\Debug\netcoreapp3.1\TrendyolLinkConverter.Core.pdb
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.csproj.CopyComplete
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Infrastructure\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Infrastructure.csproj.CoreCompileInputs.cache

@@ -46,5 +46,35 @@ namespace TrendyolLinkConverter.Api.Controllers
             }
         }
 
+        [HttpPost("CreateShortLink")]
+        public async Task<ActionResult<string>> CreateShortLink([FromBody]CreateShortLinkRequest request)
+        {
+            var response = await _mediator.Send(request);
+
+            if (!response.HasError)
+            {
+                return Ok(response.Data);
+            }
+            else
+            {
+                return BadRequest(response.Errors);
+            }
+        }
+
+        [HttpPost("GetLinksByShortLink")]
+        public async Task<ActionResult<string>> GetLinksByShortLink([FromBody]GetLinksByShortLinkRequest request)
+        {
+            var response = await _mediator.Send(request);
+
+            if (!response.HasError)
+            {
+                return Ok(response.Data);
+            }
+            else
+            {
+                return BadRequest(response.Errors);
+            }
+        }
+
     }
 }

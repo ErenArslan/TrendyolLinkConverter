@@ -1,8 +1,7 @@
 ﻿namespace TrendyolLinkConverter.Core.Dtos.Responses
 {
-    class ShortLinkDto
+   public class ShortLinkDto
     {
-        public string DeepLink { get; set; }
-        public string WebUrl { get; set; }
+        public string ShortLink { get; set; }
     }
 }

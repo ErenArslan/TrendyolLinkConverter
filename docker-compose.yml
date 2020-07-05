@@ -24,6 +24,18 @@ services:
     volumes:
       - link-converter-mysql-db:/var/lib/mysql
 
+
+  redis-db:
+    image: "redis:alpine"
+    container_name: link-converter-redis-db
+    ports:
+     - "6379:6379"
+    volumes:
+     - ./data/redis-data:/var/lib/redis
+
+    environment:
+     - REDIS_REPLICATION_MODE=master
+
 volumes:
     link-converter-mysql-db:
 

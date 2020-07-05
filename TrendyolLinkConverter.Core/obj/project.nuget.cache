@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "ksU0R9+Yn6B3Nb29jqpHlna5b4WtBvKceqU1lhEKq4V0rgk4SlCMabCYVK0SrMEPW4QQyR2o8SKeN3wULg3aww==",
+  "dgSpecHash": "8WdMPnJ4TWTJ6mfxy5z4nbdfRWeeZc2U0HTSvnE0Y/RdXAU3vn3ug0a/k7ZAeWNX8FuScp+IkywT1/I/xUE1xQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SingleLanguage\\source\\repos\\TrendyolLinkConverter.Api\\TrendyolLinkConverter.Core\\TrendyolLinkConverter.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
+    "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.5\\microsoft.extensions.caching.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.5\\microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512",
-    "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\SingleLanguage\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
-    "C:\\Users\\SingleLanguage\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
-    "C:\\Users\\SingleLanguage\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
     "C:\\Users\\SingleLanguage\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []

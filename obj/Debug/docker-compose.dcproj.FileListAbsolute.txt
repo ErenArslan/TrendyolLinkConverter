@@ -41,7 +41,6 @@ C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microso
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\HealthChecks.UI.Core.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\HealthChecks.MySql.dll
-C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Configuration.dll
-C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Caching.Redis.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\StackExchange.Redis.StrongName.dll

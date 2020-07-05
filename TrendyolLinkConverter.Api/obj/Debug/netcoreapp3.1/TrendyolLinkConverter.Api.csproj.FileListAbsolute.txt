@@ -66,6 +66,12 @@ C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConve
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\HealthChecks.MySql.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\ServiceStack.Common.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\ServiceStack.Redis.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Redis.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\bin\Debug\netcoreapp3.1\StackExchange.Redis.StrongName.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.csproj.CoreCompileInputs.cache
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.Api\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.Api.MvcApplicationPartsAssemblyInfo.cache

@@ -70,6 +70,10 @@ namespace TrendyolLinkConverter.Api
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
 
+            services.AddDistributedRedisCache(option => {
+                option.Configuration = Configuration.GetSection("Redis").Value;
+            });
+
             services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
@@ -80,6 +84,7 @@ namespace TrendyolLinkConverter.Api
 
             services.AddTransient<IValidator<CreateDeepLinkFromUrlRequest>, CreateDeepLinkFromUrlValidation>();
             services.AddTransient<IValidator<CreateUrlFromDeepLinkRequest>, CreateUrlFromDeepLinkValidation>();
+            services.AddTransient<IValidator<GetLinksByShortLinkRequest>, GetLinksByShortLinkValidation>();
 
         }
 

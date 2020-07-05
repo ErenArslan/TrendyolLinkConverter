@@ -18,7 +18,7 @@ namespace TrendyolLinkConverter.Infrastructure
 
         public DbSet<Section> Sections { get; set; }
         public DbSet<RequestHistory> RequestHistories { get; set; }
-
+        public DbSet<ShortLink> ShortLinks { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -27,7 +27,7 @@ namespace TrendyolLinkConverter.Infrastructure
             base.OnModelCreating(builder);
             builder.ApplyConfiguration(new SectionConfiguration());
             builder.ApplyConfiguration(new RequestHistoryConfiguration());
-
+            builder.ApplyConfiguration(new ShortLinkConfiguration());
 
         }
 
@@ -38,16 +38,14 @@ namespace TrendyolLinkConverter.Infrastructure
     {
         public AppDbContext CreateDbContext(string[] args)
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
-                .AddJsonFile("appsettings.json")
-                .AddEnvironmentVariables()
-                .Build();
+            //var config = new ConfigurationBuilder()
+            //    .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
+            //    .AddJsonFile("appsettings.json")
+            //    .AddEnvironmentVariables()
+            //    .Build();
             var builder = new DbContextOptionsBuilder<AppDbContext>();
-            var connectionString = config.GetConnectionString("DefaultConnection");
-            builder.UseMySql(connectionString, p => p.EnableRetryOnFailure(maxRetryCount: 10,
-         maxRetryDelay: TimeSpan.FromSeconds(5),
-         errorNumbersToAdd: null));
+            var connectionString = "Server=mysql-db,3306;Database=LinkConverter;Uid=user;Pwd=admin;";
+            builder.UseMySql(connectionString);
             return new AppDbContext(builder.Options);
 
         }

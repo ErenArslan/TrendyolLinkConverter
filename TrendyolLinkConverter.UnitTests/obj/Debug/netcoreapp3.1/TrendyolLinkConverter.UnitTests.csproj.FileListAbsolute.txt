@@ -110,3 +110,4 @@ C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConve
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.UnitTests\bin\Debug\netcoreapp3.1\Autofac.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.UnitTests\bin\Debug\netcoreapp3.1\Autofac.Extras.Moq.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.UnitTests\obj\Debug\netcoreapp3.1\TrendyolLinkConverter.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\TrendyolLinkConverter.UnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll

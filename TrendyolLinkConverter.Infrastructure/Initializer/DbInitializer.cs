@@ -40,8 +40,12 @@ namespace TrendyolLinkConverter.Infrastructure.Initializer
 
                         context.SaveChanges();
                     }
-                  
 
+
+                    //first of all, we can fill all the data into redis
+                    //
+                    //
+                    //
                 }
             }
         }

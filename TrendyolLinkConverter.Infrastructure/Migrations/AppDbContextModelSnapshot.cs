@@ -57,6 +57,32 @@ namespace TrendyolLinkConverter.Infrastructure.Migrations
 
                     b.ToTable("Sections");
                 });
+
+            modelBuilder.Entity("TrendyolLinkConverter.Core.Models.ShortLink", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("DeepLink")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("WebUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ShortLinks");
+                });
 #pragma warning restore 612, 618
         }
     }

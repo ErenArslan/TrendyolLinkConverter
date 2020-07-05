@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TrendyolLinkConverter.Infrastructure.Migrations
 {
-    public partial class initilize : Migration
+    public partial class initlize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,6 +36,22 @@ namespace TrendyolLinkConverter.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Sections", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "ShortLinks",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    CreateAt = table.Column<DateTime>(nullable: false),
+                    Code = table.Column<string>(nullable: false),
+                    WebUrl = table.Column<string>(nullable: false),
+                    DeepLink = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShortLinks", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -45,6 +61,9 @@ namespace TrendyolLinkConverter.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Sections");
+
+            migrationBuilder.DropTable(
+                name: "ShortLinks");
         }
     }
 }

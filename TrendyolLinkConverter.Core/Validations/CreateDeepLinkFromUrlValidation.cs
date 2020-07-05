@@ -10,7 +10,7 @@ namespace TrendyolLinkConverter.Core.Validations
             RuleFor(x => x.WebURL)
                 .NotNull()
                 .NotEmpty()
-                .WithMessage("WebUrl boş olamaz.");
+                .WithMessage("WebUrl cannot be blank!.");
         }
     }
 

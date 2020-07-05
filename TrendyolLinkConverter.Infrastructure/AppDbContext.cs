@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.FileExtensions;
 using Microsoft.Extensions.Configuration.Json;
+using System;
 using System.IO;
 using TrendyolLinkConverter.Core.Models;
 using TrendyolLinkConverter.Infrastructure.Configuration;
@@ -44,8 +45,11 @@ namespace TrendyolLinkConverter.Infrastructure
                 .Build();
             var builder = new DbContextOptionsBuilder<AppDbContext>();
             var connectionString = config.GetConnectionString("DefaultConnection");
-            builder.UseMySql(connectionString);
+            builder.UseMySql(connectionString, p => p.EnableRetryOnFailure(maxRetryCount: 10,
+         maxRetryDelay: TimeSpan.FromSeconds(5),
+         errorNumbersToAdd: null));
             return new AppDbContext(builder.Options);
+
         }
     }
 

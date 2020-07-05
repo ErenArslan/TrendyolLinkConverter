@@ -3,7 +3,7 @@ version: '3.4'
 services:
   trendyollinkconverter.api:
     image: trendyollinkconverterapi:dev
-    container_name: TrendyolLinkConverter.Api_1
+    container_name: TrendyolLinkConverter.Api
     build:
       target: base
       labels:

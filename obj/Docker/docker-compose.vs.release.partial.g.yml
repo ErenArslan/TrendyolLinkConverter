@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   trendyollinkconverter.api:
-    container_name: TrendyolLinkConverter.Api_1
+    container_name: TrendyolLinkConverter.Api
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

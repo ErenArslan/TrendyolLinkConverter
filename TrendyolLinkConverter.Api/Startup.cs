@@ -20,6 +20,7 @@ using TrendyolLinkConverter.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System;
 
 namespace TrendyolLinkConverter.Api
 {
@@ -63,17 +64,22 @@ namespace TrendyolLinkConverter.Api
 
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
+                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), p => p.EnableRetryOnFailure(maxRetryCount: 10,
+            maxRetryDelay: TimeSpan.FromSeconds(10),
+            errorNumbersToAdd: null));
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
 
             services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
             services.AddTransient<IWebUrlParserService, WebUrlParserService>();
+            services.AddTransient<IDeepLinkParserService, DeepLinkParserService>();
 
             services.AddMediatR(typeof(CreateDeepLinkFromUrlHandler));
 
             services.AddTransient<IValidator<CreateDeepLinkFromUrlRequest>, CreateDeepLinkFromUrlValidation>();
+            services.AddTransient<IValidator<CreateUrlFromDeepLinkRequest>, CreateUrlFromDeepLinkValidation>();
 
         }
 
@@ -85,7 +91,6 @@ namespace TrendyolLinkConverter.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
             InitializeDb(app);
             app.UseRouting();
 

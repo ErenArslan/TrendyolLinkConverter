@@ -1,16 +1,35 @@
 services:
+  mysql-db:
+    container_name: link-converter-mysql
+    environment:
+      MYSQL_DATABASE: LinkConverter
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: user
+    image: mysql:latest
+    ports:
+    - published: 3306
+      target: 3306
+    volumes:
+    - link-converter-mysql-db:/var/lib/mysql:rw
   trendyollinkconverter.api:
     build:
       context: C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api
       dockerfile: TrendyolLinkConverter.Api/Dockerfile
+    depends_on:
+    - mysql-db
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:443;http://+:80
+      ASPNETCORE_URLS: http://+:80
     image: trendyollinkconverterapi
     ports:
+    - published: 8000
+      target: 80
     - target: 80
     - target: 443
     volumes:
     - C:\Users\SingleLanguage\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\SingleLanguage\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
 version: '3.4'
+volumes:
+  link-converter-mysql-db: {}

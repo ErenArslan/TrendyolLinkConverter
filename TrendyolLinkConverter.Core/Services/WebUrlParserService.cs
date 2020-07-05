@@ -127,6 +127,11 @@ namespace TrendyolLinkConverter.Core.Services
                 {
                     deepLink += "&Query=" + Queries["q"];
                 }
+                else
+                {
+                    throw new LinkConverterDomainException("Query cannot be empty.");
+
+                }
 
 
                 return deepLink;
@@ -154,7 +159,7 @@ namespace TrendyolLinkConverter.Core.Services
             {
                 return PageType.HomePage;
             }
-            else if (new Regex(@"\b(-p-)[0-9]+").Match(command).Success)
+            else if (new Regex(@"\b(-p-)+").Match(command).Success)
             {
                 return PageType.ProductPage;
             }

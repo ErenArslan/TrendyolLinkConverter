@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: TrendyolLinkConverter.Api/Dockerfile
+    ports:
+     - "8000:80"
     depends_on:
       - mysql-db
 

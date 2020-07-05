@@ -1,4 +1,17 @@
 services:
+  mysql-db:
+    container_name: link-converter-mysql
+    environment:
+      MYSQL_DATABASE: LinkConverter
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: user
+    image: mysql:latest
+    ports:
+    - published: 3306
+      target: 3306
+    volumes:
+    - link-converter-mysql-db:/var/lib/mysql:rw
   trendyollinkconverter.api:
     build:
       context: C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api
@@ -8,11 +21,13 @@ services:
         com.microsoft.visual-studio.project-name: TrendyolLinkConverter.Api
       target: base
     container_name: TrendyolLinkConverter.Api
+    depends_on:
+    - mysql-db
     entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      ASPNETCORE_URLS: https://+:443;http://+:80
+      ASPNETCORE_URLS: http://+:80
       DOTNET_USE_POLLING_FILE_WATCHER: '1'
       NUGET_FALLBACK_PACKAGES: ''
     image: trendyollinkconverterapi:dev
@@ -23,6 +38,8 @@ services:
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     ports:
+    - published: 8000
+      target: 80
     - target: 80
     - target: 443
     tty: true
@@ -34,3 +51,5 @@ services:
     - C:\Users\SingleLanguage\.nuget\packages:/root/.nuget/packages:ro
     - C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api:/src:rw
 version: '3.4'
+volumes:
+  link-converter-mysql-db: {}

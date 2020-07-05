@@ -31,5 +31,20 @@ namespace TrendyolLinkConverter.Api.Controllers
             }
         }
 
+        [HttpPost("CreateUrlFromDeepLink")]
+        public async Task<ActionResult<string>> CreateUrlFromDeepLink([FromBody]CreateUrlFromDeepLinkRequest request)
+        {
+            var response = await _mediator.Send(request);
+
+            if (!response.HasError)
+            {
+                return Ok(response.Data);
+            }
+            else
+            {
+                return BadRequest(response.Errors);
+            }
+        }
+
     }
 }

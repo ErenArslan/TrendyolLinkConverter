@@ -17,5 +17,4 @@ docker-compose up
 
 run on http 8000 port. You can use swagger. http://localhost:8000/swagger
 
-## Contributing
 Eren Arslan

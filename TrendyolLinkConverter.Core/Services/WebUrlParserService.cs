@@ -36,7 +36,7 @@ namespace TrendyolLinkConverter.Core.Services
 
         public void SetUrl(string mainUrl)
         {
-            if ( new Regex(@"^http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$").Match(mainUrl).Success)
+            if ( new Regex(@"(http|http(s)?:\/\/)?([\w-]+\.)+[\w-]+[.com|.in|.org]+(\[\?%&=]*)?").Match(mainUrl).Success)
             {
                 MainUrl = mainUrl;
                 Uri uri = new Uri(MainUrl);

@@ -80,6 +80,10 @@
             "ServiceStack.Redis.Core": {
               "target": "Package",
               "version": "[5.9.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [

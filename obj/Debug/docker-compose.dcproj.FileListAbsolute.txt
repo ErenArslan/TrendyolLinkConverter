@@ -44,3 +44,7 @@ C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\HealthC
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Caching.Redis.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.Extensions.Primitives.dll
 C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\StackExchange.Redis.StrongName.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SingleLanguage\source\repos\TrendyolLinkConverter.Api\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll

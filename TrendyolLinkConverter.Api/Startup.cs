@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System;
+using Microsoft.OpenApi.Models;
 
 namespace TrendyolLinkConverter.Api
 {
@@ -86,6 +87,16 @@ namespace TrendyolLinkConverter.Api
             services.AddTransient<IValidator<CreateUrlFromDeepLinkRequest>, CreateUrlFromDeepLinkValidation>();
             services.AddTransient<IValidator<GetLinksByShortLinkRequest>, GetLinksByShortLinkValidation>();
 
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Trendyol Link Converter Api",
+                    Version = "v1",
+                    Description = "Link Converter HTTP API. This is a Data-Driven/CRUD microservice "
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -98,7 +109,12 @@ namespace TrendyolLinkConverter.Api
 
             InitializeDb(app);
             app.UseRouting();
+            app.UseSwagger();
 
+            app.UseSwaggerUI(p =>
+            {
+                p.SwaggerEndpoint("v1/swagger.json", "Swagger Test");
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -3,7 +3,7 @@
  
  #  TrendyolLink Converter
 
-Trend yol link converter. Short link creater.
+Trendyol link converter. Short link creater.
 
 ## Installation
 
